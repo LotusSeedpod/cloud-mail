@@ -1,8 +1,8 @@
 name: 🚀 Deploy cloud-mail to Cloudflare Workers
 
-on:
+于:
   push:
-    branches: [ main ]
+    分支: [ main ]
     paths:
       - "mail-worker/**"
       - "mail-vue/**"
@@ -50,7 +50,7 @@ jobs:
       - name: ⚙ 设置 Node.js / Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version: "24"
           cache: "pnpm"
           cache-dependency-path: "./mail-worker/pnpm-lock.yaml"
 
